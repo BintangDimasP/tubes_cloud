@@ -1,0 +1,29 @@
+# Mengabaikan file lingkungan lokal
+.env
+.env.*.local
+.env.local
+
+# Direktori vendor dan node_modules seringkali besar dan dihasilkan kembali dalam container
+/vendor
+/node_modules
+
+# Cache dan file log tidak perlu disalin
+/storage/*.key
+/storage/*.log
+/storage/framework/*
+/storage/logs/*
+/storage/app/public/*
+
+# File cache Composer
+composer.lock
+
+# File yang dihasilkan oleh sistem operasi atau editor
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.swp
+
+# Direktori build Docker jika ada
+docker-compose.yml
+Dockerfile
