@@ -18,6 +18,7 @@
                             @else
                                 <p>{{ $app_name }} Telah Ditutup Pada Jam {{ $vote_closed }}.</p>
                                 <p>Silahkan Buka Halaman Hasil Untuk Mengetahui Siapa Pasangan Yang Jadi Pemenangnya.</p>
+                                <p>Silahkan Buka Halaman Hasil Untuk Mengetahui Siapa Pasangan Yang Jadi Pemenangnya.</p>
                             @endif
                         @elseif(strtotime(date('Y-m-d')) < strtotime($vote_date))
                             <p>{{ $app_name }} Akan Dilaksanakan Pada Tanggal {{ $vote_date }}</p>
