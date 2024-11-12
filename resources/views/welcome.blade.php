@@ -3,9 +3,9 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-6 pt-md-5 mb-3 text-center text-md-start">
-                <h1 class="text-uppercase">Selamat Datang Di PILKOSIS</h1>
-                <h4>Mari Kita Sukseskan Pemilihan Ketua Osis <br> SMK Harapan Nusantara</h4>
-                <a href="#" class="btn btn-outline-primary">Mulai Memilih</a>
+                <h1 class="text-uppercase">Selamat Datang Di {{ $app_name }}</h1>
+                <h4>Mari Kita Sukseskan Pemira HMSI</h4>
+                <a href="{{ route('login') }}" class="btn btn-outline-primary">Mulai Memilih</a>
             </div>
             <div class="col-md-6">
                 <img src="{{ asset('image/clip-voting.gif') }}" alt="" srcset="" class="w-100">

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Config;
 use App\Models\Kandidat;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class VotingController extends Controller
 {
@@ -33,11 +34,10 @@ class VotingController extends Controller
             if (date('Y-m-d') == $vote_date) {
                 if (strtotime(date('H:i')) > strtotime($vote_open) && strtotime(date('H:i')) < strtotime($vote_closed)) {
                     $message = auth()->user()->name . ' Telah Memilih';
-                    event(new VotingEvent($message));
-                    auth()->user()->update([
+                    User::find(auth()->user()->id)->update([
                         'kandidat_id' => $id
                     ]);
-                }   
+                }
             }
             return redirect()->route('dashboard');
         } catch (\Throwable $th) {

@@ -34,7 +34,7 @@
             <div class="container">
               <div class="logo">
                 <a href="index.html"
-                  ><img src="{{ $app_logo }}" alt="Logo" style="height: 40px"
+                  ><img src="{{ $app_logo }}" alt="Logo" style="height: 80px"
                 /></a>
               </div>
               <div class="header-top-right">
@@ -63,7 +63,7 @@
                   >
                     <li><a class="dropdown-item" href="{{ route('dashboard') }}">My Dashboard</a></li>
                     <li><hr class="dropdown-divider" /></li>
-                    
+
                     @auth
                     <li>
                       <form method="POST" action="{{ route('logout') }}">
@@ -82,7 +82,7 @@
               </div>
             </div>
           </div>
-    
+
         </header>
 
         <div class="content-wrapper container">
@@ -95,11 +95,7 @@
           <div class="container">
             <div class="footer clearfix mb-0 text-muted">
               <div class="float-start">
-                <p>2022 &copy; {{ $app_name }}</p>
-              </div>
-              <div class="float-end">
-                <p>Crafted with <span class="text-danger"><i class="bi bi-heart-fill icon-mid"></i></span>
-                  by <a href="https://ahmadsaugi.com">Saugi</a> Develop Apps by <a href="https://github.com/fikrisuheri">FikriSuheri</a></p>
+                <p>2024 &copy; {{ $app_name }}</p>
               </div>
             </div>
           </div>
@@ -112,7 +108,7 @@
     <script src="{{ asset('mazer') }}/assets/js/pages/horizontal-layout.js"></script>
 
     <script src="{{ asset('mazer') }}/assets/extensions/apexcharts/apexcharts.min.js"></script>
- 
+
     @stack('js')
   </body>
 </html>

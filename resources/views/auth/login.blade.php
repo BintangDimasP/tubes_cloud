@@ -7,12 +7,12 @@
                 <a href="index.html"><img src="{{ $app_logo }}" alt="Logo" width="100"></a>
             </div>
             <h1 class="auth-title">Masuk</h1>
-             
+
             <form method="POST" action="{{ route('login_user') }}">
                 @csrf
-             
+
                 <div class="form-group position-relative has-icon-left mb-4">
-                    <input type="text" class="form-control form-control-xl" placeholder="NIS Kamu"
+                    <input type="text" class="form-control form-control-xl" placeholder="NIM Kamu"
                         name="email">
                     <div class="form-control-icon">
                         <i class="bi bi-person"></i>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 @if (session('error'))
-                <div class="alert alert-light-warning color-warning">
+                <div class="alert alert-danger mt-3">
                     {{ session('error') }}
                 </div>
                 @endif
@@ -40,6 +40,6 @@
             </form>
         </div>
     </div>
-    
+
 </div>
 @endsection
