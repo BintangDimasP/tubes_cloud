@@ -17,7 +17,7 @@
        <div class="container">
         <div class="row pt-5">
             <div class="col-md-12 text-center">
-                <h2>Silahkan Pilih Kandidat Pilihanmu</h2>
+                <h2>Silahkan Pilih Kandidat Yang Kamu SUka</h2>
             </div>
             <div class="col-md-12">
                 <div class="row">
